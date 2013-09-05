@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs 
-//= reuire_tree .
+//= require_self
 
-//= require_tree ../../../vendor/assets/javascripts/
+//= require_tree ../../../vendor/assets/javascripts
+
