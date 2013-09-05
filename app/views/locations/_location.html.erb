@@ -1,0 +1,14 @@
+
+  <li class="span4">
+    <div class="thumbnail"> 
+      <!-- image url-->
+      <div class="caption">
+        <h3><%= location.address%></h3>
+        <p><%= location.generaldetails%><p/>
+        <p><%= location.price%><p>
+        <p><%= link_to 'More details', location , class:"btn btn-primary" %></p>
+
+        <p><%= link_to 'Edit', edit_location_path(location) %> | <%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+    </div>
+  </li>

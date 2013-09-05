@@ -1,0 +1,3 @@
+$('#new_location').remove();
+$('#new_link').show();
+$('#new_property').prepend('<%= escape_javascript(render(:partial => "location", :locals => { :location => @location } )) %>');

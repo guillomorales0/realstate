@@ -1,0 +1,10 @@
+Pendientes:
+
++ Arreglar rotulos de formulario(en especial los checkboxes)
++ Ubicar mejor campos de formulario
++ Helper methods para mensajes de CRUD.
++ Agregar validaciones a formularios
++ Agregar paper clip
++ Reubicar presentacion de propiedades en renta o venta
++ Modulo de administracion. devise.
++ Paginacion kaminari o un content slider.

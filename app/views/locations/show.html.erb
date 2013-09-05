@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+ 
+
+<h1><%= @location.address %></h1>
+
+<p>
+  <b>Name:</b>
+  <%= @location.name %>
+</p>
+
+
+<p>
+  <b>Property status:</b>
+  <%= @location.status %>
+</p>
+<p>
+  <b>Bedrooms:</b>
+  <%= @location.bedrooms %>
+</p>
+<p>
+  <b>Baths:</b>
+  <%= @location.baths %>
+</p>
+<p>
+  <b>Year built:</b>
+  <%= @location.yearbuilt %>
+</p>
+<p>
+  <b>House size:</b>
+  <%= @location.housesize %> Sq Ft
+ 
+</p>
+<p>
+  <b>House lot size:</b>
+  <%= @location.lotsize %> Sq Ft Lot
+  
+</p>
+<p>
+  <b>General details:</b>
+  <%= @location.generaldetails %>
+</p>
+<p>
+  <b>Property Type:</b>
+  <%= @location.propertytype %>
+</p>
+
+<p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
+</p>
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>

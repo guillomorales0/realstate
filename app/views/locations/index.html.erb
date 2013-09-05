@@ -1,0 +1,123 @@
+<h1>Listing Properties.</h1>
+
+ 
+
+
+<div id="mymap">
+  <%= gmaps4rails(@json) %>
+</div>
+
+<div class="row-fluid">
+  <ul class="thumbnails" id="new_property">  
+    <%= render :partial => 'locations/location', :collection => @locations %> 
+  </div>       
+</ul>
+
+
+<%= link_to 'New Location', new_location_path, class:"btn" , id:"new_link", remote: true%>
+
+<div class="carousel-wrapper">
+    <ul class="portfolio" style="width: 1810px; display: block; margin-left: 0px;">
+        <li style="margin-right: 30px; width: 270px;">
+            <article>
+                <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                        <img src="/assets/latest1.jpg" alt="">
+                        <span class="frame-overlay"></span>
+                    </a>
+                </div>
+                <div class="sliding">
+                    <div class="inner-text">
+                        <h4 class="title"><a href="./portfolio-single.html">Project title 1</a></h4>
+                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
+                    </div>
+                </div>
+            </article>
+        </li>
+        <li style="margin-right: 30px; width: 270px;">
+            <article>
+                <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                        <img src="/assets/latest2.jpg" alt="">
+                        <span class="frame-overlay"></span>
+                    </a>
+                </div>
+                <div class="sliding">
+                    <div class="inner-text">
+                        <h4 class="title"><a href="./portfolio-single.html">Project title 2</a></h4>
+                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
+
+                    </div>
+                </div>
+            </article>
+        </li>
+        <li style="margin-right: 30px; width: 270px;">
+            <article>
+                <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                        <img src="/assets/latest3.jpg" alt="">
+                        <span class="frame-overlay"></span>
+                    </a>
+                </div>
+                <div class="sliding">
+                    <div class="inner-text">
+                        <h4 class="title"><a href="./portfolio-single.html">Project title 3</a></h4>
+                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
+
+                    </div>
+                </div>
+            </article>
+        </li>
+        <li style="margin-right: 30px; width: 270px;">
+            <article>
+                <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                        <img src="/assets/latest4.jpg" alt="">
+                        <span class="frame-overlay"></span>
+                    </a>
+                </div>
+                <div class="sliding">
+                    <div class="inner-text">
+                        <h4 class="title"><a href="./portfolio-single.html">Project title 4</a></h4>
+                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
+                    </div>
+                </div>
+            </article>
+        </li>
+        <li style="margin-right: 30px; width: 270px;">
+            <article>
+                <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                        <img src="/assets/latest5.jpg" alt="">
+                        <span class="frame-overlay"></span>
+                    </a>
+                </div>
+                <div class="sliding">
+                    <div class="inner-text">
+                        <h4 class="title"><a href="./portfolio-single.html">Project title 5</a></h4>
+                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
+
+                    </div>
+                </div>
+            </article>
+        </li>
+        <li style="margin-right: 30px; width: 270px;">
+            <article>
+                <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                        <img src="/assets/latest6.jpg" alt="">
+                        <span class="frame-overlay"></span>
+                    </a>
+                </div>
+                <div class="sliding">
+                    <div class="inner-text">
+                        <h4 class="title"><a href="./portfolio-single.html">Project title 6</a></h4>
+                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
+                    </div>
+                </div>
+            </article>
+        </li>
+    </ul>
+</div>
+<div class="es-nav"><span class="es-nav-prev" style="opacity: 1;">Previous</span><span class="es-nav-next" style="opacity: 0.5;">Next</span></div>
+                
