@@ -5,26 +5,19 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en"> <!--<![endif]-->
 <head>
-  <title>Home page</title>  
-
-  
+  <title>Home page</title>    
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application"%>
   <%= stylesheet_link_tag 'gmaps4rails' %>
   <%= csrf_meta_tags %>
-
 </head>
-
-<body>
-   
-   
-  
- <div class="container">
- <%= render :partial => 'layouts/navbar' %>
-   <%= yield %>
-   <%= yield :scripts %>
- </div>
-
-</body>
+  <body>
+    <div class="container">
+       <%= render :partial => 'layouts/navbar' %>
+       <%= yield %>
+       <%= yield :scripts %>
+     </div>
+    <%= render :partial => 'layouts/footer' %>
+  </body>
 </html>

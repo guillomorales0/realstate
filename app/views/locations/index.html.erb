@@ -1,140 +1,173 @@
 <h1>Listing Properties.</h1>
-
-
-
-  
-<div class="row">
-    <div class="span12">
-        <div class="hero-unit">                
-            <%= gmaps4rails(@json) %>
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div id="mainslider" class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="/assets/slider2.jpg" alt="" />
+              <div class="slide-caption">
+                <h3 class="slide-title">Proin vel neque vel leo pulvinar tempor vitae sed</h3>
+                <p class="slide-subtitle">Etiam porttitor aliquet nunc, non pulvinar nulla placerat et. Ut ipsum sapien, iaculis nec aliquet vel, pretium id mauris. Cras aliquet magna in eros mattis eu gravida urna fermentum.</p>
+              </div>
+            </li>
+            <li>
+               <%= gmaps4rails(@json) %>
+            </li>
+            <li>
+              <img src="/assets/slider4.jpg" alt="" />
+              <div class="slide-caption">
+                <h3 class="slide-title">Cras dictum enim vitae urna auctor feugiat</h3>
+                <p class="slide-subtitle">Etiam porttitor aliquet nunc, non pulvinar nulla placerat et. Ut ipsum sapien, iaculis nec aliquet vel, pretium id mauris. Cras aliquet magna in eros mattis eu gravida urna fermentum.</p>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-    <div class="row-fluid">
+  </div>
+</section>
+
+<section id="container">
+  <div class="container">
+    <!-- properties-->
+    <div class="row">    
+      <div class="row-fluid">
         <ul class="thumbnails" id="new_property">  
-            <%= render :partial => 'locations/location', :collection => @locations %> 
+          <%= render :partial => 'locations/location', :collection => @locations %> 
         </ul>
-    </div>  
-</div>
-
-<div class="row">
-        <div class="span12 our-works"><h4>Our Work</h4></div>
-        <div class="span12">
-            <div id="our-projects" class="carousel bttop">
-                <div class="carousel-wrapper">
-                    <ul class="portfolio" style="width: 1810px; display: block; margin-left: 0px;">
-                        <li style="margin-right: 30px; width: 270px;">
-                            <article>
-                                <div class="inner-image">
-                                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
-                                        <img src="/assets/latest1.jpg" alt="">
-                                        <span class="frame-overlay"></span>
-                                    </a>
-                                </div>
-                                <div class="sliding">
-                                    <div class="inner-text">
-                                        <h4 class="title"><a href="./portfolio-single.html">Project title 1</a></h4>
-                                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="margin-right: 30px; width: 270px;">
-                            <article>
-                                <div class="inner-image">
-                                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
-                                        <img src="/assets/latest2.jpg" alt="">
-                                        <span class="frame-overlay"></span>
-                                    </a>
-                                </div>
-                                <div class="sliding">
-                                    <div class="inner-text">
-                                        <h4 class="title"><a href="./portfolio-single.html">Project title 2</a></h4>
-                                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
-
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="margin-right: 30px; width: 270px;">
-                            <article>
-                                <div class="inner-image">
-                                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
-                                        <img src="/assets/latest3.jpg" alt="">
-                                        <span class="frame-overlay"></span>
-                                    </a>
-                                </div>
-                                <div class="sliding">
-                                    <div class="inner-text">
-                                        <h4 class="title"><a href="./portfolio-single.html">Project title 3</a></h4>
-                                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
-
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="margin-right: 30px; width: 270px;">
-                            <article>
-                                <div class="inner-image">
-                                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
-                                        <img src="/assets/latest4.jpg" alt="">
-                                        <span class="frame-overlay"></span>
-                                    </a>
-                                </div>
-                                <div class="sliding">
-                                    <div class="inner-text">
-                                        <h4 class="title"><a href="./portfolio-single.html">Project title 4</a></h4>
-                                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="margin-right: 30px; width: 270px;">
-                            <article>
-                                <div class="inner-image">
-                                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
-                                        <img src="/assets/latest5.jpg" alt="">
-                                        <span class="frame-overlay"></span>
-                                    </a>
-                                </div>
-                                <div class="sliding">
-                                    <div class="inner-text">
-                                        <h4 class="title"><a href="./portfolio-single.html">Project title 5</a></h4>
-                                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
-
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="margin-right: 30px; width: 270px;">
-                            <article>
-                                <div class="inner-image">
-                                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
-                                        <img src="/assets/latest6.jpg" alt="">
-                                        <span class="frame-overlay"></span>
-                                    </a>
-                                </div>
-                                <div class="sliding">
-                                    <div class="inner-text">
-                                        <h4 class="title"><a href="./portfolio-single.html">Project title 6</a></h4>
-                                        <p>Lorem ipsum dolor site amet quanta negat omnia</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
-                </div>
-            <div class="es-nav"><span class="es-nav-prev" style="opacity: 0.5;">Previous</span><span class="es-nav-next" style="opacity: 1;">Next</span></div></div>
-            <script type="text/javascript">
-                $(document).ready(function(){
-                    $('#our-projects').elastislide({
-                        imageW : 270,
-                        border : 0,
-                        minItems : 1,
-                        margin : 30
-                    });
-                });
-            </script>
+      </div>  
+    </div>
+    
+    <!-- Welcome-->
+    <div class="row">
+      <div class="span12">
+        <div class="hero-unit">
+          <h4>Welcome to Crystal - responsive web template for business!</h4>
+          <p>Proin arcu tellus, placerat facilisis rhoncus eget, mollis ac erat. Donec accumsan erat in elit condimentum dictum pharetra est molestie. Donec eget felis in ligula bibendum gravida consectetur at dolor.Proin arcu tellus, placerat facilisis rhoncus eget, mollis ac erat. Donec accumsan erat in elit condimentum dictum pharetra est molestie. Donec eget felis in ligula bibendum gravida consectetur at dolor.
+          </p>     <a class="btn btn-welcome btn-large pull-right">Learn more</a>
         </div>
-</div>
-<%= link_to 'New Location', new_location_path, class:"btn" , id:"new_link", remote: true%>
+      </div>
+    </div>
+    <!-- portafolio slider-->
+    <div class="row">
+      <div class="span12">
+        <h3>Related Projects</h3>
+        <div id="our-projects" class="carousel bttop">
+          <div class="carousel-wrapper">
+            <ul class="portfolio" style="width: 1810px; display: block; margin-left: 0px;">
+              <li style="margin-right: 30px; width: 270px;">
+                <article>
+                  <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                      <img src="/assets/latest1.jpg" alt="">
+                      <span class="frame-overlay"></span>
+                    </a>
+                  </div>
+                  <div class="sliding">
+                    <div class="inner-text">
+                      <h4 class="title"><a href="./portfolio-single.html">Project title 1</a></h4>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li style="margin-right: 30px; width: 270px;">
+                <article>
+                  <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                      <img src="/assets/latest2.jpg" alt="">
+                      <span class="frame-overlay"></span>
+                    </a>
+                  </div>
+                  <div class="sliding">
+                    <div class="inner-text">
+                      <h4 class="title"><a href="./portfolio-single.html">Project title 2</a></h4>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li style="margin-right: 30px; width: 270px;">
+                <article>
+                  <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                      <img src="/assets/latest3.jpg" alt="">
+                      <span class="frame-overlay"></span>
+                    </a>
+                  </div>
+                  <div class="sliding">
+                    <div class="inner-text">
+                      <h4 class="title"><a href="./portfolio-single.html">Project title 3</a></h4>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li style="margin-right: 30px; width: 270px;">
+                <article>
+                  <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                      <img src="/assets/latest4.jpg" alt="">
+                      <span class="frame-overlay"></span>
+                    </a>
+                  </div>
+                  <div class="sliding">
+                    <div class="inner-text">
+                      <h4 class="title"><a href="./portfolio-single.html">Project title 4</a></h4>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li style="margin-right: 30px; width: 270px;">
+                <article>
+                  <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                      <img src="/assets/latest5.jpg" alt="">
+                      <span class="frame-overlay"></span>
+                    </a>
+                  </div>
+                  <div class="sliding">
+                    <div class="inner-text">
+                      <h4 class="title"><a href="./portfolio-single.html">Project title 5</a></h4>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li style="margin-right: 30px; width: 270px;">
+                <article>
+                  <div class="inner-image">
+                    <a href="/assets/view.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                      <img src="/assets/latest6.jpg" alt="">
+                      <span class="frame-overlay"></span>
+                    </a>
+                  </div>
+                  <div class="sliding">
+                    <div class="inner-text">
+                      <h4 class="title"><a href="./portfolio-single.html">Project title 6</a></h4>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div class="es-nav"><span class="es-nav-prev" style="opacity: 0.5;">Previous</span><span class="es-nav-next" style="opacity: 1;">Next</span></div></div>
+          <script type="text/javascript">
+            $(document).ready(function(){
+              $('#our-projects').elastislide({
+                imageW : 270,
+                border : 0,
+                minItems : 1,
+                margin : 30
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <%= link_to 'New Location', new_location_path, class:"btn" , id:"new_link", remote: true%>
 

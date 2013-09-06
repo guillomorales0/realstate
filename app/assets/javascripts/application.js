@@ -14,5 +14,6 @@
 //= require jquery_ujs 
 //= require_self
 
+//= require  ../../../vendor/assets/javascripts/jquery.min.js
 //= require_tree ../../../vendor/assets/javascripts
 
